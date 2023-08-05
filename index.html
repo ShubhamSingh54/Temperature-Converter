@@ -6,40 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Convertor
     </title>
-    <style>
-        body{
-             padding:50px 100px;
+    
+       
 
-        }
-        h1{ 
-            text-align: center;
-        }
-        #container{
-            text-align: center;
-            background-color: aqua;
-            padding: 50px;
 
-        }
-
-        .input-div{
-            display:inline-block;
-
-        }
-        .inp{
-            padding:5px 10px ;
-            margin: 10px;
-            font: size 30px;
-            font-weight: bold; 
-            width: 150px;
-            text-align: center;
-
-        }
-        label{
-            font-size: 22px;
-            color: black;
-        }
-
-    </style>
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Temperature Convertor</h1>
@@ -55,33 +26,4 @@
         </div>
 
     </div>
-     <script>
-        var cel = document.getElementById("cel");
-        var fan = document.getElementById("fan");
-        cel.addEventListener('input',function(){
-            //console.log( "cel changed");
-            let c= this.value;
-            let f= (c * 9/5) + 32 ;
-            if( !Number.isInteger(f))
-            {
-               f=f.toFixed(4) ;
-            }
-
-            fan.value=f;
-        });
-        fan.addEventListener('input',function(){
-            //console.log("fan changed");
-            let f=this.value;
-            let c=(f - 32) *5/9;
-            if( !Number.isInteger(c))
-            {
-               c=c.toFixed(4) ;
-            }
-            cel.value=c;
-
-        });
-
-    </script>
-   
-</body>
-</html>
+    <script src="particles.js">
