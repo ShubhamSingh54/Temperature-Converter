@@ -29,3 +29,29 @@ label{
    font-size: 22px;
    color: black;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+   .inp{
+    padding:10px 20px ;
+    margin: 10px;
+    font: size 30px;
+    font-weight: bold; 
+    width:auto;
+    text-align: center;
+ 
+ }
+
+ body{
+   padding:10px 10px;
+
+}
+#container{
+   text-align: center;
+   background-color: aqua;
+   padding: 20px;
+
+}
+ }
+ 
